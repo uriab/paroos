@@ -30,4 +30,4 @@ makeCurl(
 			'parse_mode'=>'HTML'
 		]
 		'485446580:AAH96fgUtkDjsd1fN-XHFVitCryoOgC2ChE'
-	);
+);
