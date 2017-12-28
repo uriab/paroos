@@ -22,7 +22,7 @@ function makeCurl($method,$datas,$api){
 }
 
 makeCurl(
-					'sendMessage',
+					'sendmessage',
 					[
 							'chat_id'=>$chatid,
 							'text'=>$text,
