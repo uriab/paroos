@@ -1,7 +1,7 @@
 <?php
 
 
-$update = json_decode{file_get_contents('php://input')};
+$update = json_decode(file_get_contents('php://input'));
 
 $chatid = $update->message->chat->id;
 $message_id = $update->message->message_id;;
@@ -22,14 +22,14 @@ function makeCurl($method,$datas,$api){
 }
 
 makeCurl(
-		'sendMessage',
-		[
-			'chat_id'=>chatid,
-			'text'=>$text,
-			'reply_to_message_id'=>$message_id,
-			'parse_mode'=>'HTML'
-		]
-		,
-		'485446580:AAH96fgUtkDjsd1fN-XHFVitCryoOgC2ChE'
-	);
+					'sendMessage',
+					[
+							'chat_id'=>$chatid,
+							'text'=>$text,
+							'reply_to_message_id'=>$message_id,
+							'parse_mode'=>'HTML'
+					]
+					,
+					'485446580:AAH96fgUtkDjsd1fN-XHFVitCryoOgC2ChE'
+					);
 ?>
